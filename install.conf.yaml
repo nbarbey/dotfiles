@@ -1,16 +1,16 @@
 - clean: ['~']
 - link:
     ~/.dotfiles: ''
+    ~/.oh-my-zsh: oh-my-zsh
     ~/.zshrc: zshrc
     ~/.xbindkeysrc: xbindkeysrc
     ~/.xinitrc: xinitrc
     ~/.gitconfig: gitconfig
-    ~/.vim/autoload/pathogen.vim pathogen.vim
+    ~/.vim/autoload/pathogen.vim: vim-pathogen/autoload/pathogen.vim
 - shell: 
-  - 
-    - "git update-submodules --init --recursive --remote"
+  -
+    - "git submodule update --init --recursive --remote"
     - "Installing/updating submodules"
-  - 
-    - "mkdir ~/.vim && mkdir ~/.vim/autoload && mkdir ~/.vim/plugin"
+  -
+    - "mkdir -p ~/.vim/autoload && mkdir -p ~/.vim/plugin"
     - "Setting-up .vim directory"
-
