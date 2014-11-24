@@ -2,4 +2,5 @@
 - link:
     ~/.dotfiles: ''
     ~/.zshrc: zshrc
+    ~/.xbindkeysrc: xbindkeysrc
 - shell: [git update-submodules, Installing/updating submodules]
