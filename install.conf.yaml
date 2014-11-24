@@ -1,3 +1,5 @@
-- clean: []
-- link: {}
-- shell: []
+- clean: ['~']
+- link:
+    ~/.dotfiles: ''
+    ~/.zshrc: zshrc
+- shell: [git update-submodules, Installing/updating submodules]
