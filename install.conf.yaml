@@ -5,4 +5,12 @@
     ~/.xbindkeysrc: xbindkeysrc
     ~/.xinitrc: xinitrc
     ~/.gitconfig: gitconfig
-- shell: [git update-submodules, Installing/updating submodules]
+    ~/.vim/autoload/pathogen.vim pathogen.vim
+- shell: 
+  - 
+    - "git update-submodules --init --recursive --remote"
+    - "Installing/updating submodules"
+  - 
+    - "mkdir ~/.vim && mkdir ~/.vim/autoload && mkdir ~/.vim/plugin"
+    - "Setting-up .vim directory"
+
