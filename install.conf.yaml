@@ -3,4 +3,5 @@
     ~/.dotfiles: ''
     ~/.zshrc: zshrc
     ~/.xbindkeysrc: xbindkeysrc
+    ~/.xinitrc: xinitrc
 - shell: [git update-submodules, Installing/updating submodules]
