@@ -1,0 +1,12 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+[user]
+	name = Nicolas Barbey
+	email = nicolas.a.barbey@gmail.com
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout=3600
