@@ -8,6 +8,7 @@
     ~/.gitconfig: gitconfig
     ~/.vim/autoload/pathogen.vim: vim-pathogen/autoload/pathogen.vim
     ~/.vim/bundle/syntastic: syntastic
+    ~/.vim/bundle/vimproc.vim: vimproc.vim
 - shell: 
   -
     - "git submodule update --init --recursive"
@@ -17,3 +18,6 @@
          do mkdir -p ~/.vim/$dir;
        done"
     - "Setting-up .vim directory"
+  -
+    - "(cd vimproc.vim && make)"
+    - "Build vimproc.vim"
