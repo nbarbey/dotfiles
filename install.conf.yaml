@@ -7,10 +7,13 @@
     ~/.xinitrc: xinitrc
     ~/.gitconfig: gitconfig
     ~/.vim/autoload/pathogen.vim: vim-pathogen/autoload/pathogen.vim
+    ~/.vim/bundle/syntastic: syntastic
 - shell: 
   -
-    - "git submodule update --init --recursive --remote"
+    - "git submodule update --init --recursive"
     - "Installing/updating submodules"
   -
-    - "mkdir -p ~/.vim/autoload && mkdir -p ~/.vim/plugin"
+    - "for dir in autoload plugin bundle;
+         do mkdir -p ~/.vim/$dir;
+       done"
     - "Setting-up .vim directory"
