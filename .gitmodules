@@ -13,3 +13,6 @@
 [submodule "vimproc.vim"]
 	path = vimproc.vim
 	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "ghcmod-vim"]
+	path = ghcmod-vim
+	url = https://github.com/eagletmt/ghcmod-vim.git

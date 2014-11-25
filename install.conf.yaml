@@ -9,6 +9,7 @@
     ~/.vim/autoload/pathogen.vim: vim-pathogen/autoload/pathogen.vim
     ~/.vim/bundle/syntastic: syntastic
     ~/.vim/bundle/vimproc.vim: vimproc.vim
+    ~/.vim/bundle/ghcmod-vim: ghcmod-vim
 - shell: 
   -
     - "git submodule update --init --recursive"
