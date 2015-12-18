@@ -44,10 +44,16 @@
 	control + alt + t
 "firefox"
 	control + alt + f
+"firefox --private-window"
+	control + alt + i
 "pidgin"
 	control + alt + p
 "xpdf -z page -g 740x965"
 	control + alt + x
+
+# lock
+"xscreensaver-command --lock"
+        control + alt + l
 
 # volume control
 "amixer set Master 2dB+"
