@@ -11,7 +11,9 @@
     ~/.vim/bundle/syntastic: syntastic
     ~/.vim/bundle/vimproc.vim: vimproc.vim
     ~/.vim/bundle/ghcmod-vim: ghcmod-vim
-- shell: 
+    ~/.vim/bundle/vim-hdevtools: vim-hdevtools
+    ~/.vim/bundle/neomake: neomake
+- shell:
   -
     - "git submodule update --init --recursive"
     - "Installing/updating submodules"
