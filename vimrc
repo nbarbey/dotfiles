@@ -1,5 +1,7 @@
 execute pathogen#infect()
 
+set shell=bash
+
 if filereadable("/etc/vimrc")
     source /etc/vimrc
 endif
@@ -26,21 +28,17 @@ set smarttab
 set shiftwidth=4
 set softtabstop=4
 
-" Use english for spellchecking, but don't spellcheck by default
-if version >= 700
-   set spl=en spell
-   set nospell
-endif
-
 " latex
 let g:tex_flavor = "latex"
 set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
 
+" whitespaces
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
+autocmd WinEnter * match WhiteSpaceEOL /\s\+$/
+
 " haskell
 let g:syntastic_haskell_checkers = ['ghc-mod', 'hlint']
-
-" ghc-mod
-autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 
 " hdevtools
 au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
