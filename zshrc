@@ -1,6 +1,6 @@
 ZSH=~/.oh-my-zsh/
 
-ZSH_THEME="daveverwer"
+ZSH_THEME="gallois"
 
 CASE_SENSITIVE="true"
 
