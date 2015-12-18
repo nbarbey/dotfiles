@@ -14,6 +14,15 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/local/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/local/bin:$PATH
+export PATH=$PATH:/bin
 
 export EDITOR=vim
+
+zstyle ":completion:*:commands" rehash 1
+
+# nix
+# workaround various glibc versions issue
+export LOCALE_ARCHIVE=~/.nix-profile/lib/locale/locale-archive
