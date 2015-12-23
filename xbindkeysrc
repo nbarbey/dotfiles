@@ -63,6 +63,10 @@
 "amixer set Master toggle"
         Mod2 + XF86AudioMute
 
+# screenshots
+"scrot '%Y-%m-%d_$wx$h.png' -u -e 'mv $f ~/shots/'"
+        control + alt + s
+
 ##################################
 # End of xbindkeys configuration #
 ##################################
